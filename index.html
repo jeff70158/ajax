@@ -8,7 +8,8 @@
 	let url = 'https://jeff70158.github.io/ajax/product.json';
 	fetch(url).then(function(response) {
 		//console.log(response);
-		return response.text();
+		//return response.text();
+		return response.json();
 	}).then(function(result) {
 		console.log(result);
 	});
