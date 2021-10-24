@@ -9,6 +9,8 @@
 	fetch(url).then(function(response) {
 		//console.log(response);
 		return response.text();
+	}).then(function(result) {
+		console.log(result);
 	});
 </script>
 </body>
