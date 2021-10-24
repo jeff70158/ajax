@@ -7,9 +7,7 @@
 	<input type="text" id="input1">
 	
 <script>
-	
-		//var User = document.getElementById('input1');
-		/*var me = {name: 'jeff'};
+		var me = {name: 'jeff'};
 		let url = 'https://jeff70158.github.io/ajax/index.php';
 		fetch(url,{
 			method: 'POST',
@@ -23,41 +21,6 @@
 			return response.text();
 		}).then(function(result) {
 			//console.log(result);
-			/*
-			let product;
-			for(let i=0;i<result.length;i++)
-			{
-				product = result[i];
-				console.log(product);
-			}
-			console.log(result);
-		});*/
-		/*let user = {
-  name: 'John',
-  surname: 'Smith'
-};
-
-let response = await fetch('/article/fetch/post/user', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json;charset=utf-8'
-  },
-  body: JSON.stringify(user)
-});
-
-let result = await response.json();
-alert(result.message);*/
-		fetch('https://jeff70158.github.io/ajax/index.php', { 
-		  method: 'POST',
-		  headers: {
-		    'Content-Type': 'application/json'
-		  },
-		  body: JSON.stringify({
-		    'product_id': 1,
-		    'order_amount': 2,
-		  })
-		}).then(response => response.text()).then((body) => {
-		  console.log(body);
 		});
 	
 </script>
