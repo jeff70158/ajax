@@ -17,8 +17,10 @@
 		    	'Content-Type': 'application/json'
 		  	})
 			}).then(res => res.json())
-		.catch(error => console.log('Error:', error))
-		.then(response => console.log('Success:', response));
+		.then(response => console.log('Success:', response))
+		.catch(function(error) {
+  console.log('There has been a problem with your fetch operation: ', error.message);
+});
 	
 </script>
 </body>
