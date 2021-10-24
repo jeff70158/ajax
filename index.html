@@ -11,8 +11,16 @@
 		//return response.text();
 		return response.json();
 	}).then(function(result) {
-		console.log(result);
+		//console.log(result);
+		let product;
+		for(let i=0;i<result.length;i++)
+		{
+			product = result[i];
+			console.log(product);
+		}
 	});
+	
+	
 </script>
 </body>
 </html>
