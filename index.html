@@ -9,13 +9,14 @@
 <script>
 		var me = {name: 'jeff'};
 		var url = 'https://jeff70158.github.io/ajax/index.php';
-		fetch(url,{
-			method: 'POST',
-			body:  JSON.stringify(me),
-			headers: new Headers({
-    				'Content-Type': 'application/json'
-			})
-		}).then(res => res.json())
+
+		fetch(url, {
+			method: 'POST', // or 'PUT'
+		  	body: JSON.stringify(me), // data can be `string` or {object}!
+		  	headers: new Headers({
+		    	'Content-Type': 'application/json'
+		  	})
+			}).then(res => res.json())
 		.catch(error => console.error('Error:', error))
 		.then(response => console.log('Success:', response));
 	
