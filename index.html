@@ -7,12 +7,12 @@
 	<input type="text" id="input1">
 	
 <script>
-		var me = {name: 'jeff'};
-		var url = 'https://jeff70158.github.io/ajax/index.php';
+		/*var me = {name: 'jeff'};
+		var url = 'https://jeff70158.github.io/ajax/index1.php';
 
 		fetch(url, {
-			method: 'POST', // or 'PUT'
-		  	body: JSON.stringify(me), // data can be `string` or {object}!
+			method: 'POST',
+		  	body: JSON.stringify(me),
 		  	headers: new Headers({
 		    	'Content-Type': 'application/json'
 		})
@@ -20,7 +20,21 @@
 			return response.json();
 		}).then(function(result) {
 			console.log(result);
-		});
+		});*/
+	let form_data = new FormData();
+	form_data.append("user_id", "001");
+	form_data.append("name", "jeff");
+	
+	fetch(url, {
+  		method: "POST",
+  			//body: new URLSearchParams(form_data),
+  		body: form_data
+	}).then(function(response){
+  		console.log(response);
+  		return response.json();
+	}).then(function(data){
+ 		// 取得 data 資料
+	})
 	
 </script>
 </body>
