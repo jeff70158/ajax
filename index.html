@@ -15,9 +15,6 @@
 		let url = 'https://jeff70158.github.io/ajax/index.php';
 		fetch(url,{
 			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			 },
 			body:  JSON.stringify(me)
 		}).then(function(response) {
 			//console.log(response);
